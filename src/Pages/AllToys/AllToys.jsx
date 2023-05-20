@@ -21,12 +21,7 @@ const AllToys = () => {
 
       <div className="w-full text-center ">
         <table className=" w-full">
-          <col  className="w-[5%]"/>
-          <col className="w-[25%]"/>
-          <col className="w-[10%]"/>
-          <col  className="w-[10%]"/>
-          <col className="w-[40%]" />
-          <col className="w-[10%]" />
+         
         
           <thead>
             <tr >

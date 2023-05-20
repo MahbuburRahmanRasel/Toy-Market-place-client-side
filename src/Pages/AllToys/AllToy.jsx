@@ -39,13 +39,13 @@ const AllToy = ({mytoy,index}) => {
           {index+1}
         </th>
         <td>
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-5 justify-center">
             <div className="avatar">
-              <div className="mask mask-squircle w-12 h-12">
+              <div className="mask mask-squircle w-20 h-20">
                 <img src={picture} alt="Avatar Tailwind CSS Component" />
               </div>
             </div>
-            <div>
+            <div className='text-center'>
               <div className="font-bold">{toyname}</div>
               <div className="text-sm opacity-50">{subcategory}</div>
             </div>
