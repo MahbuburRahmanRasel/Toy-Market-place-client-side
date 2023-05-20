@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { TabPanel } from "react-tabs";
+
 import Swal from 'sweetalert2'
 import { AuthContext } from "../../Providers/AuthProvider";
 import './Category.css'

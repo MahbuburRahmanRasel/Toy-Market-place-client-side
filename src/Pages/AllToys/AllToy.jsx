@@ -1,12 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProvider';
+import Swal from 'sweetalert2'
 
 const AllToy = ({mytoy,index}) => {
 
     const { _id,picture, toyname, subcategory, price, quantity, details,sellername } = mytoy;
 
+    const { user} = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleDetail= (id)=>{
-        
+
+        if(!user){
+
+            Swal.fire({
+              title: 'You have to Login first',
+              showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+              },
+              hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+              },
+              confirmButtonColor: '#DB915E',
+              
+         
+            })
+      
+          }
+          else{navigate(`/alltoys/${id}`)}
+
     }
 
 
