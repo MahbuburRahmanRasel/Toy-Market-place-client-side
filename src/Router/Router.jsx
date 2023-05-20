@@ -10,7 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage";
 import ToyDetails from "../Pages/SingleToy/ToyDetails";
 import MyToy from "../Pages/Mytoy/MyToy";
-import UpdatedPage from "../Pages/UpdatedToy/UpdatedPage";
+
 import Updatedtoy from "../Pages/UpdatedToy/Updatedtoy";
 
 
@@ -43,7 +43,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/alltoys',
-        element:<PrivateRoute> <AllToys/> </PrivateRoute>
+        element: <AllToys/> 
+        
 
       },
       {
@@ -63,8 +64,16 @@ const router = createBrowserRouter([
       {
         path: '/updatedtoy/:id', 
         element: <Updatedtoy />,
-        loader: ({params}) => fetch(`http://localhost:5000/updatedtoy/${params.id}`)
+        loader: ({params}) => fetch(`http://localhost:5000/addtoys/${params.id}`)
+      },
+
+      {
+        
       }
+
+
+      
+
 
     ],
   },

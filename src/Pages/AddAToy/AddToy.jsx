@@ -8,7 +8,7 @@ const AddToy = () => {
   const { user } = useContext(AuthContext);
   
 
-  const handleCheckout = (event) => {
+  const handleAddToy = (event) => {
     event.preventDefault();
     const form = event.target;
     const toyname = form.toyname.value;
@@ -68,7 +68,7 @@ const AddToy = () => {
           />
         </div>
         <div>
-          <form onSubmit={handleCheckout}>
+          <form onSubmit={handleAddToy}>
             <div className="  mx-auto">
               <div className="form-control">
                 <label className="label">
@@ -177,7 +177,7 @@ const AddToy = () => {
             <div className="form-control mt-6  mx-auto">
               <input
                 type="submit"
-                value="Order Confirm"
+                value="Add A Toy"
                 className="btn my-btn-1"
               />
             </div>

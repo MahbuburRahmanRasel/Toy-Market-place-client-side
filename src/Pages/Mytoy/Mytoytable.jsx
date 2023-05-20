@@ -7,6 +7,7 @@ const Mytoytable = ({ mytoy,handleDelete }) => {
   const navigate = useNavigate()
 
   const handleUpdate = (id)=>{
+    navigate(`/updatedtoy/${id}`)
 
   }
 
