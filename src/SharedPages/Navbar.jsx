@@ -81,7 +81,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col justify-center items-center ">
             <img
-              src="https://i.ibb.co/QKJ911t/menu-3.png"
+              src="https://i.ibb.co/bvGppQm/menu-5.png"
               alt=""
               className="h-[46.656px]"
             />

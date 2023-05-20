@@ -24,7 +24,11 @@
 
 
   .my-btn-3{
-    @apply bg-[#DB915E] lg:px-5 border-none hover:bg-[#6E6E6E] ;
+    @apply bg-[#DB915E] lg:px-5 py-2 border-none hover:bg-[#6E6E6E] ;
+  }
+
+  .my-btn-4{
+    @apply bg-[#708D77] lg:px-5 border-none hover:bg-[#DB915E] ;
   }
 
   .my-bg-1{
@@ -48,6 +52,14 @@
     @apply text-[#D9BF8D]
   }
   
+
+  .table-heading{
+    @apply my-text-2 font-bold text-xl 
+  }
+
+  .table-row{
+    @apply   border  border-solid border-[#708D77];
+  }
 
   .active{
     @apply font-bold tracking-wide text-[#DB915E] transition-colors duration-200 underline text-lg
