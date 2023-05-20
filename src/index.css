@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap'); 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  :root {
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .my-container{
+    @apply px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 
+  }
+  
+
+  .my-btn-1{
+    @apply bg-[#DB915E] lg:px-5 border-none hover:bg-[#708D77] ;
+  }
+
+  .my-btn-2{
+    @apply bg-[#DB915E]  border-none hover:bg-[#708D77] 
+  }
+
+
+  .my-btn-3{
+    @apply bg-[#708D77] lg:px-5 border-none hover:bg-[#6E6E6E] ;
+  }
+
+  .my-bg-1{
+    @apply bg-[#DB915E]
+  }
+  .my-bg-2{
+    @apply bg-[#c1dfda]
+  }
+  .my-bg-3{
+    @apply bg-[#6E6E6E]
+  }
+  
+
+  .my-text-1{
+    @apply text-[#DB915E]
+  }
+  .my-text-2{
+    @apply text-[#708D77]
+  }
+  .my-text-3{
+    @apply text-[#D9BF8D]
+  }
+  
+
+  .active{
+    @apply font-bold tracking-wide text-[#DB915E] transition-colors duration-200 underline text-lg
+  }
+
+
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+  
+  .animate-spin-slow-custom {
+    animation: spin-slow 2s linear infinite;
+  }
+
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .animate-jump {
+    animation: jump 1s ease-in-out infinite;
+  }

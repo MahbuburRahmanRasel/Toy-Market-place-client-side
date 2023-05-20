@@ -1,0 +1,110 @@
+#DB915E
+#91C6BE
+#708D77
+#6E6E6E
+
+banner-toy 
+https://i.ibb.co/8m2ppH4/banner-bg-1.jpg
+https://i.ibb.co/4s4jGXt/banner-bg-2.jpg
+https://i.ibb.co/hV4SC8r/banner-bg-3.jpg
+https://i.ibb.co/Jp3dLvp/banner-bg-4.webp
+https://i.ibb.co/LhMr920/banner-bg-5.jpg
+https://i.ibb.co/5GFrb5G/banner-bg-6.jpg
+https://i.ibb.co/tZm1SNM/banner-bg-7.jpg
+https://i.ibb.co/txxbd3m/banner-bg-8.jpg
+
+menu
+https://i.ibb.co/yg06Jjm/menu-1.png
+https://i.ibb.co/3yhDthw/menu-2.png
+https://i.ibb.co/QKJ911t/menu-3.png
+https://i.ibb.co/5hDtB1L/menu-4.png
+https://i.ibb.co/bvGppQm/menu-5.png
+
+animal-toy
+https://i.ibb.co/BzLrF8f/cube-activity-toy.jpg
+https://i.ibb.co/3yBfXWQ/rocking-fox.jpg
+https://i.ibb.co/SQLJbFz/rocking-fox-2.jpg
+https://i.ibb.co/bzNVpcQ/shark.webp
+https://i.ibb.co/5GBHfx6/soft-elephant.webp
+https://i.ibb.co/FhdmX7K/soft-toy-dream-seeker.jpg
+
+bird - toy 
+https://i.ibb.co/TLP6HVJ/bird-1.jpg
+https://i.ibb.co/QXpCCgJ/bird-2.jpg
+https://i.ibb.co/xLdhVkD/bird-3.jpg
+https://i.ibb.co/Rpt0Tdf/Parrot-stuffed-bird-6.jpg
+https://i.ibb.co/pxVSbNZ/pink-parakeet-bird-5.jpg
+https://i.ibb.co/t3TP0yx/soft-owl.jpg
+https://i.ibb.co/1qkVGjh/sparrow-plus-bird-4.jpg
+
+Teddy Toy 
+https://i.ibb.co/yRw7jsR/brown-teddy.jpg
+https://i.ibb.co/D7VpT9T/doll.webp
+https://i.ibb.co/3d2Jqrc/love-teddy.webp
+https://i.ibb.co/D18QCBg/red-teddy-bear.jpg
+https://i.ibb.co/CwdyB2k/teddy-bear-sugar-kelp.jpg
+https://i.ibb.co/gFd17Hy/three-teddy.jpg
+
+https://i.ibb.co/DQhqCLf/Error-404-Page-Under-Construction-Concept-Social-Media.png
+
+teedy details 
+"This teddy bear is perfect for any child who loves to cuddle. It is soft and cuddly, and it comes in a variety of different colors. This bear is sure to provide hours of comfort and companionship for any child."
+
+
+{
+  "picture": "https://www.example.com/teddybear1.jpg",
+  "toy_name": "Classic Teddy Bear",
+  "sub_category": "Stuffed Animals",
+  "seller_name": "Amazon",
+  "seller_email": "amazon@example.com",
+  "price": 20.00,
+  "rating": 4.5,
+  "available_quantity": 10,
+  "detail_description": "This classic teddy bear is perfect for any child who loves to cuddle. It is soft and cuddly, and it comes in a variety of different colors. This bear is sure to provide hours of comfort and companionship for any child."
+},
+{
+  "picture": "https://www.example.com/teddybear2.jpg",
+  "toy_name": "Grizzly Bear Teddy Bear",
+  "sub_category": "Stuffed Animals",
+  "seller_name": "Walmart",
+  "seller_email": "walmart@example.com",
+  "price": 25.00,
+  "rating": 4.0,
+  "available_quantity": 5,
+  "detail_description": "This grizzly bear teddy bear is perfect for any child who loves to pretend to be a bear. It is big and cuddly, and it comes in a variety of different colors. This bear is sure to provide hours of fun and companionship for any child."
+},
+{
+  "picture": "https://www.example.com/teddybear3.jpg",
+  "toy_name": "Polar Bear Teddy Bear",
+  "sub_category": "Stuffed Animals",
+  "seller_name": "Target",
+  "seller_email": "target@example.com",
+  "price": 30.00,
+  "rating": 5.0,
+  "available_quantity": 10,
+  "detail_description": "This polar bear teddy bear is perfect for any child who loves to dream of the North Pole. It is soft and cuddly, and it comes in a variety of different colors. This bear is sure to provide hours of comfort and companionship for any child."
+},
+{
+  "picture": "https://www.example.com/teddybear4.jpg",
+  "toy_name": "Teddy Bear with Bow Tie",
+  "sub_category": "Stuffed Animals",
+  "seller_name": "Toys R Us",
+  "seller_email": "toysrus@example.com",
+  "price": 15.00,
+  "rating": 4.5,
+  "available_quantity": 10,
+  "detail_description": "This teddy bear with bow tie is perfect for any child who loves to dress up. It is soft and cuddly, and it comes in a variety of different colors. This bear is sure to provide hours of fun and companionship for any child."
+},
+{
+  "picture": "https://www.example.com/teddybear5.jpg",
+  "toy_name": "Teddy Bear with Heart",
+  "sub_category": "Stuffed Animals",
+  "seller_name": "Amazon",
+  "seller_email": "amazon@example.com",
+  "price": 20.00,
+  "rating": 5.0,
+  "available_quantity": 10,
+  "detail_description": "This teddy bear with heart is perfect for any child who loves to show their love. It is soft and cuddly, and it comes in a variety of different colors. This bear is sure to provide hours of comfort and companionship for any child."
+}
+
+
