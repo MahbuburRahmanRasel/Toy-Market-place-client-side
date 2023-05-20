@@ -108,3 +108,12 @@ teedy details
 }
 
 
+picture,
+toyname,
+sellername,
+email,
+subcategory,
+rating,
+quantity,
+price,
+details

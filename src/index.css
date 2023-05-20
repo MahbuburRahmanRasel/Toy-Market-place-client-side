@@ -24,7 +24,7 @@
 
 
   .my-btn-3{
-    @apply bg-[#708D77] lg:px-5 border-none hover:bg-[#6E6E6E] ;
+    @apply bg-[#DB915E] lg:px-5 border-none hover:bg-[#6E6E6E] ;
   }
 
   .my-bg-1{
@@ -58,8 +58,8 @@
     0% {
       transform: rotate(0deg);
     }
-    100% {
-      transform: rotate(5deg);
+    50% {
+      transform: rotate(10deg);
     }
   }
   
@@ -78,4 +78,17 @@
   
   .animate-jump {
     animation: jump 1s ease-in-out infinite;
+  }
+
+  @keyframes jump-2 {
+    0%{
+      transform: translateY(0);
+    }
+    100%  {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-jump-2 {
+    animation: jump-2 2s ease-in-out infinite;
   }

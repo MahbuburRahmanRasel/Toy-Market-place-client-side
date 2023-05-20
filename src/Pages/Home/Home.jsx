@@ -1,7 +1,8 @@
 import React, { createContext } from 'react';
 import Banner from './Banner';
 import ShopByCategory from './ShopByCategory';
-import { useLoaderData } from 'react-router-dom';
+
+import BuySection from './BuySection';
 
 
 
@@ -15,7 +16,7 @@ const Home = () => {
     return (
         <div>
             <Banner />
-
+            <BuySection />
             <ShopByCategory />
         </div>
     );

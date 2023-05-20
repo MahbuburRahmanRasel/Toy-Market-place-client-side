@@ -17,7 +17,7 @@ const ToyDetails = () => {
         <div className=" flex gap-10 justify-between">
           <img
             src={picture}
-            className=" rounded-lg shadow-2xl lg:w-1/2 animate-jump"
+            className="h-screen rounded-lg shadow-2xl lg:w-1/2 animate-jump"
           />
           <div className="lg:w-1/2 space-y-3">
             <h1 className="text-5xl font-bold my-text-1">{toy_name}</h1>
