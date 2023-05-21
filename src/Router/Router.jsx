@@ -73,7 +73,7 @@ const router = createBrowserRouter([
 
       {
         path: "/alltoys/:id",
-        element: <DetailToy />,
+        element:  <PrivateRoute><DetailToy /></PrivateRoute>,
         loader: ({ params }) =>
           fetch(
             `https://toy-market-place-server-alpha.vercel.app/mytoy/${params.id}`

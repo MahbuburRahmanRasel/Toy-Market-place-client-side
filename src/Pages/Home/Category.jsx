@@ -23,19 +23,19 @@ const Category = ({ ft }) => {
   const handleToast = (id)=>{
     if(!user){
 
-      // Swal.fire({
-      //   title: 'You have to Login first',
-      //   showClass: {
-      //     popup: 'animate__animated animate__fadeInDown'
-      //   },
-      //   hideClass: {
-      //     popup: 'animate__animated animate__fadeOutUp'
-      //   },
-      //   confirmButtonColor: '#DB915E',
+      Swal.fire({
+        title: 'You have to Login first',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        },
+        confirmButtonColor: '#DB915E',
 
-      // }
+      }
       
-      // )
+      )
       navigate('/login')
     }
     else{navigate(`/toy/${id}`)}
