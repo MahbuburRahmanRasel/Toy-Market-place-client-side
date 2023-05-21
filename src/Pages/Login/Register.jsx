@@ -39,10 +39,8 @@ const handleSignup = (event)=>{
     .then(result =>{
       const user = result.user;
       console.log(user);
-      if (!user.emailVerified) {
-        setSuccess('User login successful.');
-      setError('');
-      }
+      setSuccess('User has been created successfully');
+      
       
       navigate(from, { replace: true });
     })

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import SocialLogin from "./SocialLogin";
@@ -9,6 +9,8 @@ const Login = () => {
   const navigate = useNavigate();
   const from = location.state?.from?.pathname || "/";
   console.log(from)
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
   
 
@@ -19,13 +21,31 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+
+     // validation
+     setError('');
+     setSuccess('');
+     if (!/(?=.*[A-Z])/.test(password)) {
+         setError('Please add at least one uppercase.');
+         return
+     }
+   
+     else if (password.length < 6) {
+         setError('Password must be 6 characters long');
+         return
+     }
+
     loginUser(email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);
+        if (user.emailVerified) {
+          setSuccess('User login successful.');
+        setError('');
+        }
         navigate(from, { replace: true });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => setError(error.message));
   };
 
   return (
@@ -81,6 +101,8 @@ const Login = () => {
               </p>
               <p className="text-center">or</p>
               <SocialLogin />
+              <p className=' text-red-600 '>{error}</p>
+            <p className='my-text-1 '>{success}</p>
             </div>
           </div>
         </div>
