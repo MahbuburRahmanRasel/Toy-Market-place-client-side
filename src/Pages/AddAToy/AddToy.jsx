@@ -31,7 +31,6 @@ const AddToy = () => {
       details,
     };
     console.log(order);
-
     fetch("https://toy-market-place-server-alpha.vercel.app/addtoys", {
       method: "POST",
       headers: {
