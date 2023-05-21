@@ -217,7 +217,61 @@ const Blog = () => {
         </div>
         <hr />
       </div>
-
+      <div className="bg-gray-800 text-gray-100">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-gray-400">May 21, 2023</span>
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              className="px-2 py-1 font-bold rounded bg-violet-400 text-gray-900"
+            >
+              MongoDB
+            </a>
+          </div>
+          <div className="flex items-center justify-between mt-4">
+            <div>
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                className="flex items-center"
+              >
+                <img
+                  src="https://xsgames.co/randomusers/assets/avatars/male/10.jpg"
+                  alt="avatar"
+                  className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500"
+                />
+                <span className="hover:underline dark:text-gray-400">
+                  Jhankar Mahbub
+                </span>
+              </a>
+            </div>
+          </div>
+          <div className="mt-3">
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              className="text-2xl font-bold hover:underline"
+            >
+              What is MongoDB aggregate and how does it work ?
+            </a>
+            <p className="mt-2">
+              MongoDB aggregate is a feature that allows you to perform complex
+              operations on your data. It is a powerful tool that can be used to
+              analyze data, identify trends, and generate reports.
+              <br />
+              <br />
+              MongoDB aggregate works by using a pipeline of stages. Each stage
+              performs an operation on the data, and the output of one stage is
+              passed to the next stage. The final stage of the pipeline returns
+              the results of the aggregation.
+              
+              
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
       
     </div>
   );
