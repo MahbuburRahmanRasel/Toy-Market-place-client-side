@@ -1,12 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 
 import { AuthContext } from "../../Providers/AuthProvider";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
+import TitleBanner from "../../SharedPages/TitleBanner";
 
 const AddToy = () => {
- 
   const { user } = useContext(AuthContext);
-  
 
   const handleAddToy = (event) => {
     event.preventDefault();
@@ -33,7 +32,7 @@ const AddToy = () => {
     };
     console.log(order);
 
-    fetch("http://localhost:5000/addtoys", {
+    fetch("https://toy-market-place-server-alpha.vercel.app/addtoys", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -45,20 +44,20 @@ const AddToy = () => {
         console.log(data);
         if (data.acknowledged) {
           Swal.fire({
-            title: 'Success',
-            text: 'Add a toy successfully',
-            imageUrl: 'https://i.ibb.co/D7VpT9T/doll.webp',
+            title: "Success",
+            text: "Add a toy successfully",
+            imageUrl: "https://i.ibb.co/D7VpT9T/doll.webp",
             imageWidth: 174,
             imageHeight: 200,
-            confirmButtonColor: '#DB915E',
-            
-          })
+            confirmButtonColor: "#DB915E",
+          });
         }
       });
   };
 
   return (
     <div>
+      <TitleBanner text={`Kidland | Add Toys`} />
       <div className="card-body my-container grid grid-cols-3">
         <div>
           <img
@@ -175,11 +174,7 @@ const AddToy = () => {
               </div>
             </div>
             <div className="form-control mt-6  mx-auto">
-              <input
-                type="submit"
-                value="Add A Toy"
-                className="btn my-btn-1"
-              />
+              <input type="submit" value="Add A Toy" className="btn my-btn-1" />
             </div>
           </form>
         </div>

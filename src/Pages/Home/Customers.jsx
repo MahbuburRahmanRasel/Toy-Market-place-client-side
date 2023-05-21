@@ -28,7 +28,7 @@ const Customers = () => {
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                 </svg>
-                I recently ordered from Kidland Baby Toy Store online, and I was extremely pleased with my experience.The website was user-friendly, making it easy to navigate and find the toys I was looking for.  
+                I recently ordered from <span className="font-bold my-text-1">Kidland Baby Toy Store</span> online, and I was extremely pleased with my experience.The website was user-friendly, making it easy to navigate and find the toys I was looking for.  
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -64,7 +64,7 @@ const Customers = () => {
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                 </svg>
-                Shopping at Kidland Baby Toy Store online was a breeze. The website was well-designed and visually appealing
+                Shopping at <span className="font-bold my-text-1">Kidland Baby Toy Store</span> online was a breeze. The website was well-designed and visually appealing
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -100,7 +100,7 @@ const Customers = () => {
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                 </svg>
-                Kidland Baby Toy Store online platform is fantastic. I love the convenience of being able to shop for high-quality toys from the comfort of my home. The website is intuitive and easy to navigate, allowing me to quickly find what I need.
+                <span className="font-bold my-text-1">Kidland Baby Toy Store</span> online platform is fantastic. I love the convenience of being able to shop for high-quality toys from the comfort of my home. The website is intuitive and easy to navigate, allowing me to quickly find what I need.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -136,7 +136,7 @@ const Customers = () => {
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                 </svg>
-                I recently discovered Kidland Baby Toy Stores online store, and I could not be happier with my purchase. The website is well-organized, making it simple to browse through their diverse toy collection.
+                I recently discovered <span className="font-bold my-text-1">Kidland Baby Toy Store</span>  online store, and I could not be happier with my purchase. The website is well-organized, making it simple to browse through their diverse toy collection.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"

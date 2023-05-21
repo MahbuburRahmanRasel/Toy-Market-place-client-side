@@ -14,70 +14,71 @@ import MyToy from "../Pages/Mytoy/MyToy";
 import Updatedtoy from "../Pages/UpdatedToy/Updatedtoy";
 import DetailToy from "../Pages/AllToys/DetailToy";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-    errorElement: <ErrorPage/>,
-    
+    errorElement: <ErrorPage />,
+
     children: [
       {
         path: "/",
         element: <Home />,
-        
       },
       {
-        path:'/login',
-        element:<Login/>
-
+        path: "/login",
+        element: <Login />,
       },
       {
-        path:'/register',
-        element:<Register/>
-
+        path: "/register",
+        element: <Register />,
       },
       {
-        path:'/blog',
-        element:<Blog/>
-
+        path: "/blog",
+        element: <Blog />,
       },
       {
-        path: '/alltoys',
-        element: <AllToys/> 
-        
-
+        path: "/alltoys",
+        element: <AllToys />,
       },
       {
-        path:'/addtoy',
-        element:<AddToy/>
+        path: "/addtoy",
+        element: <AddToy />,
       },
       {
-        path:'/toy/:id',
-        element:  <ToyDetails />   ,
-        loader: ({params})=>fetch(`http://localhost:5000/toy/${params.id}`)
-
+        path: "/toy/:id",
+        element: (
+          <PrivateRoute>
+            {" "}
+            <ToyDetails />
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://toy-market-place-server-alpha.vercel.app/toy/${params.id}`
+          ),
       },
       {
-        path:'/mytoys',
-        element:<MyToy/>
+        path: "/mytoys",
+        element: <MyToy />,
       },
       {
-        path: '/updatedtoy/:id', 
+        path: "/updatedtoy/:id",
         element: <Updatedtoy />,
-        loader: ({params}) => fetch(`http://localhost:5000/addtoys/${params.id}`)
+        loader: ({ params }) =>
+          fetch(
+            `https://toy-market-place-server-alpha.vercel.app/addtoys/${params.id}`
+          ),
       },
 
       {
-        path:'/alltoys/:id',
-        element:  <DetailToy/>  ,
-        loader: ({params})=>fetch(`http://localhost:5000/mytoy/${params.id}`)
-      }
-
-
-      
-
-
+        path: "/alltoys/:id",
+        element: <DetailToy />,
+        loader: ({ params }) =>
+          fetch(
+            `https://toy-market-place-server-alpha.vercel.app/mytoy/${params.id}`
+          ),
+      },
     ],
   },
 ]);
