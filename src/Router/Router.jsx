@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         path: "/toy/:id",
         element: (
           <PrivateRoute>
-            {" "}
+           
             <ToyDetails />
           </PrivateRoute>
         ),

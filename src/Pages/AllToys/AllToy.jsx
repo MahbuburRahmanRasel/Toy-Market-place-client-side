@@ -10,6 +10,7 @@ const AllToy = ({mytoy,index}) => {
     const { user} = useContext(AuthContext);
     const navigate = useNavigate();
 
+   
     const handleDetail= (id)=>{
 
         if(!user){
@@ -32,9 +33,27 @@ const AllToy = ({mytoy,index}) => {
 
     }
 
+    const handleSearch = () => {
+      fetch(`https://toy-market-place-server-alpha.vercel.app/getToysByText/${searchText}`)
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          setAlltoys(data);
+        });
+    };
+
+
+
+
+
 
     return (
+
+      <>
+
+
         <tr className="text-center">
+
         <th >
           {index+1}
         </th>
@@ -62,6 +81,7 @@ const AllToy = ({mytoy,index}) => {
         </th>
         <hr  className="my-text-1"/>
       </tr>
+      </>
     );
 };
 
