@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 
@@ -8,7 +8,8 @@ const Register = () => {
   const location = useLocation()
   const navigate = useNavigate()
   const from = location.state?.from?.pathname || '/';
-
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
 const handleSignup = (event)=>{
     event.preventDefault();
@@ -19,14 +20,34 @@ const handleSignup = (event)=>{
     const password = form.password.value;
     console.log(name,photo,email,password);
 
+
+    // validation
+    setError('');
+    setSuccess('');
+    if (!/(?=.*[A-Z])/.test(password)) {
+        setError('Please add at least one uppercase.');
+        return
+    }
+  
+    else if (password.length < 6) {
+        setError('Password must be 6 characters long');
+        return
+    }
+
+
     registerUser(email,password)
     .then(result =>{
       const user = result.user;
       console.log(user);
+      if (!user.emailVerified) {
+        setSuccess('User login successful.');
+      setError('');
+      }
+      
       navigate(from, { replace: true });
     })
     .catch(error =>{
-      console.log(error);
+      setError(error.message);
     })
 
 
@@ -100,7 +121,8 @@ const handleSignup = (event)=>{
               </div>
               </form>
               <p>Already Register to <span className="my-text-1">Kidland ? </span> <Link to='/login'><span className="my-text-2 font-bold">Login</span></Link> </p>
-            
+              <p className=' text-red-600 '>{error}</p>
+            <p className='my-text-1 '>{success}</p>
              
             </div>
           </div>
