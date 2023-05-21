@@ -162,7 +162,61 @@ const Blog = () => {
         <hr />
       </div>
 
-      
+      <div className="bg-gray-800 text-gray-100">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-gray-400">May 21, 2023</span>
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              className="px-2 py-1 font-bold rounded bg-violet-400 text-gray-900"
+            >
+              NodeJS framework
+            </a>
+          </div>
+          <div className="flex items-center justify-between mt-4">
+            <div>
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                className="flex items-center"
+              >
+                <img
+                  src="https://xsgames.co/randomusers/assets/avatars/male/9.jpg"
+                  alt="avatar"
+                  className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500"
+                />
+                <span className="hover:underline dark:text-gray-400">
+                  Jahsim Uddin
+                </span>
+              </a>
+            </div>
+          </div>
+          <div className="mt-3">
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              className="text-2xl font-bold hover:underline"
+            >
+              What is express js? What is Nest JS?
+            </a>
+            <p className="mt-2">
+              Express.js is a minimal and flexible Node.js web application
+              framework that provides a robust set of features for building web
+              applications. It is designed to be easy to use and extend, and it
+              is used by a large number of developers worldwide.
+              <br />
+              <br />
+              Nest.js is a framework built on top of Express.js that provides a
+              more opinionated and structured approach to building web
+              applications. It uses TypeScript, a typed superset of JavaScript,
+              and it provides a number of features that make it easier to build
+              scalable and maintainable web applications.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
 
       <div className="bg-gray-800 text-gray-100">
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
