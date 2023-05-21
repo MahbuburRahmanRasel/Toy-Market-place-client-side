@@ -4,97 +4,75 @@ import Category from "./Category";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 
-
-
-
 const ShopByCategory = () => {
-
- 
   const [toys, setToys] = useState([]);
-  // const [ftoy, setFtoy] = useState("Animal Toy");
-
+  const [subcategory, setSubcategory] = useState("Animal Toy");
 
   useEffect(() => {
-    fetch("http://localhost:5000/toys")
+    fetch(`http://localhost:5000/toys/${subcategory}`)
       .then((res) => res.json())
       .then((data) => setToys(data));
-  }, []);
+  }, [subcategory]);
 
+  //   const uniqueList = [
+  //     ...new Set(
+  //       toys.map((curElem) => {
+  //         return curElem.sub_category;
+  //       })
+  //     )
 
-//   const uniqueList = [
-//     ...new Set(
-//       toys.map((curElem) => {
-//         return curElem.sub_category;
-//       })
-//     )
-   
-    
-//   ];
+  //   ];
 
-//   const filterItems = (category)=>{
-  
-//   const updatedList = toys.filter(curEl =>{
-//     return curEl.sub_category == category
-// });
-
-// setToys(updatedList)
-    
-// }
-
- 
-  
   
 
-//   const title = uniqueList.map((curElem) => {
-//     return (
-//       <Tab key={curElem.index} onClick={() => filterItems(curElem)}>
-//         {curElem}
-//       </Tab>
-//     );
-//   });
-
-  // const text = ftoy?.map((ft) => {
-  //   return (
-  //     <TabPanel >
-  //       <Category ft={ft} />
-  //     </TabPanel>
-  //   );
-
-
-
-// const handleSubCategory = (tab)=>{
-//   setFtoy(tab)
-// }
-// console.log(ftoy)
-  
+  const handleSubCategory = (tab) => {
+    setSubcategory(tab);
+  };
+  console.log(subcategory);
 
   return (
     <div className="my-container">
       <h1 className="text-4xl mt-10 mb-5 text-center font-bold my-text-1">
         Shop By Category
       </h1>
-      {/* <Tabs>
-        <TabList>
-         <Tab onClick={()=>handleSubCategory("Animal Toy")}> Animal Toy</Tab>
-        <Tab onClick={()=>handleSubCategory("Bird Toy")}> Bird Toy</Tab>
-        <Tab onClick={()=>handleSubCategory("Teddy Toy")}> Teddy Toy</Tab> 
 
-
-        {title}
-        </TabList> */}
-
-        {
-          toys?.map( ft=>
-            
-            <Category 
-            key={ft.index}
-            ft ={ft}
-            />
-          )
-        }
       
-      
-      {/* </Tabs> */}
+
+      <div className=" mx-auto text-center lg:mt-16 lg:mb-5">;
+
+        <button 
+        onClick={() => handleSubCategory("Animal Toy")}
+        className={`btn my-btn-3 rounded-none ${subcategory === "Animal Toy" ? " my-btn-5" : ""} `}  
+        >
+          Animal Toy
+          </button>
+        <button 
+        
+        onClick={() => handleSubCategory("Bird Toy")}
+        className={`btn my-btn-3 rounded-none ${subcategory === "Bird Toy" ? " my-btn-5" : ""} `}  
+        
+        >Bird Toy
+        
+        </button>
+
+
+        <button 
+        
+        onClick={() => handleSubCategory("Teddy Toy")}
+        className={`btn my-btn-3 rounded-none ${subcategory === "Teddy Toy" ? " my-btn-5" : ""} `} 
+
+        >
+          Teddy Toy
+        </button>
+      </div>
+
+      <div className="lg:grid lg:grid-cols-2 mx-auto  lg:ml-[150px">
+      {toys?.map((ft) => (
+        <Category key={ft.index} ft={ft} />
+      ))}
+      </div>
+
+     
     </div>
   );
 };

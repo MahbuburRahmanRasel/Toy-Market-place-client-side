@@ -31,6 +31,15 @@
     @apply bg-[#708D77] lg:px-5 border-none hover:bg-[#DB915E] ;
   }
 
+  .my-btn-5{
+    @apply bg-[#708D77] lg:px-5 border-none hover:bg-[#6E6E6E]
+
+  }
+
+  .my-btn-6{
+    @apply bg-[#DB915E] lg:px-5 py-2 border border-[#708D77] hover:bg-[#6E6E6E] ;
+  }
+
   .my-bg-1{
     @apply bg-[#DB915E]
   }
