@@ -3,6 +3,8 @@ import Banner from './Banner';
 import ShopByCategory from './ShopByCategory';
 
 import BuySection from './BuySection';
+import Customers from './Customers';
+import Banner2 from './Banner2';
 
 
 
@@ -18,6 +20,8 @@ const Home = () => {
             <Banner />
             <BuySection />
             <ShopByCategory />
+            <Customers />
+           
         </div>
     );
 };

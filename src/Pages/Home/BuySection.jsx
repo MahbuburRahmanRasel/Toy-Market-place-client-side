@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+
+
 
 const BuySection = () => {
+
+  useEffect(() => {
+    AOS.init({duration:1000});
+  }, []);
+
+
+
   return (
     <div>
       <div className="    my-10">
         <div className=" flex flex-col lg:flex-row-reverse my-container gap-10 justify-between items-center">
-          <div className=" relative w-1/2">
+          <div data-aos="fade-left" className=" relative w-1/2">
           <img
             src="https://i.ibb.co/txxbd3m/banner-bg-8.jpg"
             className=" rounded-lg shadow-2xl zoom"
@@ -15,7 +26,7 @@ const BuySection = () => {
           className="absolute bottom-0 -left-10 animate-spin-slow-custom w-1/3  "/>
           </div>
 
-          <div className="w-1/2 my-auto mx-auto text-center">
+          <div data-aos="fade-right"  className="w-1/2 my-auto mx-auto text-center">
             <h1 className="lg:text-5xl text-3xl font-bold my-text-2">Baby’s Smile Our Joy </h1>
             <p className="py-6">
             Getting a toy is a new and exciting experience for child. They are learning about the world around them and exploring new things, and getting a toy is a way for them to do that.

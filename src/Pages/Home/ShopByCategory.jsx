@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 import Category from "./Category";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+
 import "react-tabs/style/react-tabs.css";
 
 const ShopByCategory = () => {
@@ -14,16 +16,9 @@ const ShopByCategory = () => {
       .then((data) => setToys(data));
   }, [subcategory]);
 
-  //   const uniqueList = [
-  //     ...new Set(
-  //       toys.map((curElem) => {
-  //         return curElem.sub_category;
-  //       })
-  //     )
-
-  //   ];
-
-  
+  useEffect(() => {
+    AOS.init({duration:1000});
+  }, []);
 
   const handleSubCategory = (tab) => {
     setSubcategory(tab);
@@ -32,13 +27,13 @@ const ShopByCategory = () => {
 
   return (
     <div className="my-container">
-      <h1 className="text-4xl mt-10 mb-5 text-center font-bold my-text-1">
+      <h1 data-aos="fade-right" className="text-4xl mt-10 mb-5 text-center font-bold my-text-1">
         Shop By Category
       </h1>
 
       
 
-      <div className=" mx-auto text-center lg:mt-16 lg:mb-5">;
+      <div data-aos="fade-left"  className=" mx-auto text-center lg:mt-16 lg:mb-5">;
 
         <button 
         onClick={() => handleSubCategory("Animal Toy")}

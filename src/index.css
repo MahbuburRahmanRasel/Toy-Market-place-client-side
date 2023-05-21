@@ -124,3 +124,26 @@
   .zoom:hover {
     transform: scale(1.1);
   }
+
+
+  .custom-shape-divider-bottom-1684637567 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1684637567 svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 81px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1684637567 .shape-fill {
+    fill: #FFFFFF;
+}
