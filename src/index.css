@@ -113,3 +113,14 @@
   .animate-jump-2 {
     animation: jump-2 2s ease-in-out infinite;
   }
+
+
+  .zoom {
+   
+    transition: transform 1s; /* Animation */
+   
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1);
+  }

@@ -66,7 +66,7 @@ const ShopByCategory = () => {
         </button>
       </div>
 
-      <div className="lg:grid lg:grid-cols-2 mx-auto  lg:ml-[150px">
+      <div className="lg:grid lg:grid-cols-2  mx-auto  lg:ml-[150px]">
       {toys?.map((ft) => (
         <Category key={ft.index} ft={ft} />
       ))}

@@ -61,7 +61,7 @@ const Mytoytable = ({ mytoy,handleDelete }) => {
        onClick={()=>handleUpdate(_id)}
         >Update</button>
       </th>
-      <hr  className="my-text-1"/>
+      <div className="divider"></div> 
     </tr>
   );
 };

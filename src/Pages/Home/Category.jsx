@@ -48,7 +48,7 @@ const Category = ({ ft }) => {
           <img
             src={picture}
             alt=""
-            className="h-40"
+            className="h-40 zoom"
           />
         </figure>
         <div className="card-body mx-auto text-center">
